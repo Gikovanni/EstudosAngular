@@ -1,1 +1,6 @@
-<p>cards works!</p>
+<div *ngFor="let card of filteredCards">
+    <div class="card">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+    </div>
+  </div>

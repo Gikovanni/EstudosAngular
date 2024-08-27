@@ -1,1 +1,7 @@
-<p>filters works!</p>
+<div>
+    <label *ngFor="let category of categories">
+      <input type="checkbox" [value]="category" (change)="onCheckboxChange($event)">
+      {{ category }}
+    </label>
+  </div>
+<app-cards></app-cards>
